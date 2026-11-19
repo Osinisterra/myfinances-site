@@ -5,7 +5,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 REPO = "https://github.com/Osinisterra/myfinances-site"
-ISSUES = REPO + "/issues/new"
+EMAIL = "omarsinisterra00@gmail.com"
+CONTACT = "mailto:" + EMAIL + "?subject=MyFinances"
 UPDATED = {"es": "19 de noviembre de 2026", "en": "November 19, 2026", "pt": "19 de novembro de 2026"}
 
 # Rutas de cada página por idioma (relativas a la raíz del sitio).
@@ -130,8 +131,8 @@ PRIVACY = {
 SUPPORT = {
 "es": f"""
 <h1>Soporte</h1>
-<p class="lead">¿Algo no funciona o tienes una idea? <a class="button" href="{ISSUES}">Escríbenos</a></p>
-<p class="note">Se abre un formulario público en GitHub (necesitas una cuenta gratuita). No incluyas datos personales, números de cuenta ni capturas con tus saldos.</p>
+<p class="lead">¿Algo no funciona o tienes una idea? <a class="button" href="{CONTACT}">Escríbenos</a></p>
+<p class="note">O escribe a {EMAIL}. No incluyas datos personales, números de cuenta ni capturas con tus saldos.</p>
 
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿Qué bancos funcionan?</summary><p>Por ahora Bancolombia: correos de compras y transferencias, y extractos de ahorros y tarjetas de crédito. También puedes registrar movimientos a mano, incluido el efectivo.</p></details>
@@ -143,8 +144,8 @@ SUPPORT = {
 """,
 "en": f"""
 <h1>Support</h1>
-<p class="lead">Something not working, or have an idea? <a class="button" href="{ISSUES}">Contact us</a></p>
-<p class="note">This opens a public form on GitHub (a free account is required). Don't include personal data, account numbers or screenshots showing your balances.</p>
+<p class="lead">Something not working, or have an idea? <a class="button" href="{CONTACT}">Contact us</a></p>
+<p class="note">Or write to {EMAIL}. Don't include personal data, account numbers or screenshots showing your balances.</p>
 
 <h2>Frequently asked questions</h2>
 <details><summary>Which banks are supported?</summary><p>Bancolombia for now: purchase and transfer emails, plus savings and credit card statements. You can also add transactions by hand, including cash.</p></details>
@@ -156,8 +157,8 @@ SUPPORT = {
 """,
 "pt": f"""
 <h1>Suporte</h1>
-<p class="lead">Algo não funciona ou tem uma ideia? <a class="button" href="{ISSUES}">Fale conosco</a></p>
-<p class="note">Abre um formulário público no GitHub (é preciso uma conta gratuita). Não inclua dados pessoais, números de conta nem capturas com seus saldos.</p>
+<p class="lead">Algo não funciona ou tem uma ideia? <a class="button" href="{CONTACT}">Fale conosco</a></p>
+<p class="note">Ou escreva para {EMAIL}. Não inclua dados pessoais, números de conta nem capturas com seus saldos.</p>
 
 <h2>Perguntas frequentes</h2>
 <details><summary>Quais bancos funcionam?</summary><p>Por enquanto o Bancolombia: e-mails de compras e transferências, e extratos de poupança e cartão de crédito. Você também pode registrar movimentações à mão, inclusive dinheiro em espécie.</p></details>

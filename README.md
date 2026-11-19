@@ -4,4 +4,4 @@ Páginas públicas de la app MyFinances (política de privacidad y soporte) en e
 
 Se generan con `python3 build.py`.
 
-¿Problemas o ideas? Abre un *issue*.
+¿Problemas o ideas? Escribe al correo de la página de soporte.
