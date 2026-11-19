@@ -44,7 +44,7 @@ PRIVACY = {
 <p>Los extractos que importas (o que llegan a tu correo, si lo autorizas) se abren y se leen en tu iPhone.</p>
 
 <h2>Inteligencia artificial (opcional, apagada por defecto)</h2>
-<p>Solo si la activas y pones tu propia clave de Anthropic, la app envía a Anthropic la descripción de los movimientos que no logra reconocer, para clasificarlos. Antes de enviarla, la app <strong>quita los datos personales</strong>: correos, números de documento, números de cuenta y tarjeta, teléfonos y el nombre del titular. El envío va directamente de tu iPhone a Anthropic con tu clave y se rige por las políticas de Anthropic.</p>
+<p>Solo si la activas y pones tu propia clave de Anthropic, y aceptas el aviso de permiso dentro de la app, MyFinances envía a Anthropic el texto de un extracto o correo que ningún lector entiende y los nombres de comercios que no conoce, para leerlos y categorizarlos. Antes de enviarla, la app <strong>quita los datos personales</strong>: correos, números de documento, números de cuenta y tarjeta, teléfonos y el nombre del titular. El envío va directamente de tu iPhone a Anthropic con tu clave y se rige por las políticas de Anthropic.</p>
 
 <h2>Tasa de cambio</h2>
 <p>Para mostrar los dólares en pesos, la app consulta la TRM oficial en datos.gov.co. Esa consulta no incluye ningún dato tuyo.</p>
@@ -76,7 +76,7 @@ PRIVACY = {
 <p>Statements you import (or that arrive in your email, if you allow it) are opened and read on your iPhone.</p>
 
 <h2>Artificial intelligence (optional, off by default)</h2>
-<p>Only if you turn it on and enter your own Anthropic key, the app sends Anthropic the description of transactions it can't recognize, so they can be categorized. Before sending, the app <strong>removes personal data</strong>: emails, ID numbers, account and card numbers, phone numbers and the account holder's name. The request goes straight from your iPhone to Anthropic with your key and is governed by Anthropic's policies.</p>
+<p>Only if you turn it on and enter your own Anthropic key, and accept the permission prompt in the app, MyFinances sends Anthropic the text of a statement or email that no reader understands and the names of unknown merchants, to read and categorize them. Before sending, the app <strong>removes personal data</strong>: emails, ID numbers, account and card numbers, phone numbers and the account holder's name. The request goes straight from your iPhone to Anthropic with your key and is governed by Anthropic's policies.</p>
 
 <h2>Exchange rate</h2>
 <p>To show dollars in pesos, the app fetches the official exchange rate (TRM) from datos.gov.co. That request contains none of your data.</p>
@@ -108,7 +108,7 @@ PRIVACY = {
 <p>Os extratos que você importa (ou que chegam ao seu e-mail, se você permitir) são abertos e lidos no seu iPhone.</p>
 
 <h2>Inteligência artificial (opcional, desativada por padrão)</h2>
-<p>Somente se você ativá-la e informar sua própria chave da Anthropic, o app envia à Anthropic a descrição das movimentações que não consegue reconhecer, para classificá-las. Antes do envio, o app <strong>remove os dados pessoais</strong>: e-mails, números de documento, números de conta e cartão, telefones e o nome do titular. O envio vai direto do seu iPhone para a Anthropic com a sua chave e segue as políticas da Anthropic.</p>
+<p>Somente se você ativá-la e informar sua própria chave da Anthropic, e aceitar o aviso de permissão no app, o MyFinances envia à Anthropic o texto de um extrato ou e-mail que nenhum leitor entende e os nomes de estabelecimentos desconhecidos, para lê-los e categorizá-los. Antes do envio, o app <strong>remove os dados pessoais</strong>: e-mails, números de documento, números de conta e cartão, telefones e o nome do titular. O envio vai direto do seu iPhone para a Anthropic com a sua chave e segue as políticas da Anthropic.</p>
 
 <h2>Taxa de câmbio</h2>
 <p>Para mostrar dólares em pesos, o app consulta a taxa oficial (TRM) em datos.gov.co. Essa consulta não inclui nenhum dado seu.</p>
