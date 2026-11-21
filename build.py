@@ -7,7 +7,7 @@ ROOT = Path(__file__).parent
 REPO = "https://github.com/Osinisterra/myfinances-site"
 EMAIL = "omarsinisterra00@gmail.com"
 CONTACT = "mailto:" + EMAIL + "?subject=MyFinances"
-UPDATED = {"es": "19 de noviembre de 2026", "en": "November 19, 2026", "pt": "19 de novembro de 2026"}
+UPDATED = {"es": "21 de noviembre de 2026", "en": "November 21, 2026", "pt": "21 de novembro de 2026"}
 
 # Rutas de cada página por idioma (relativas a la raíz del sitio).
 PATHS = {
@@ -20,13 +20,13 @@ LANG_NAMES = {"es": "Español", "en": "English", "pt": "Português"}
 UI = {
     "es": {"privacy": "Privacidad", "support": "Soporte", "updated": "Última actualización",
            "tagline": "Tus cuentas, tarjetas e inversiones en un solo lugar, al día con tus correos y extractos.",
-           "home_lead": "MyFinances es una app de finanzas personales para iPhone. Tus datos se quedan en tu iPhone: sin servidores y sin cuentas que crear."},
+           "home_lead": "MyFinances es una app de finanzas personales para iPhone y Android. Tus datos se quedan en tu teléfono: sin servidores y sin cuentas que crear."},
     "en": {"privacy": "Privacy", "support": "Support", "updated": "Last updated",
            "tagline": "Your accounts, cards and investments in one place, kept up to date with your emails and statements.",
-           "home_lead": "MyFinances is a personal finance app for iPhone. Your data stays on your iPhone: no servers and no accounts to create."},
+           "home_lead": "MyFinances is a personal finance app for iPhone and Android. Your data stays on your phone: no servers and no accounts to create."},
     "pt": {"privacy": "Privacidade", "support": "Suporte", "updated": "Última atualização",
            "tagline": "Suas contas, cartões e investimentos em um só lugar, atualizados com seus e-mails e extratos.",
-           "home_lead": "MyFinances é um app de finanças pessoais para iPhone. Seus dados ficam no seu iPhone: sem servidores e sem contas para criar."},
+           "home_lead": "MyFinances é um app de finanças pessoais para iPhone e Android. Seus dados ficam no seu telefone: sem servidores e sem contas para criar."},
 }
 
 PRIVACY = {
@@ -46,6 +46,12 @@ PRIVACY = {
 
 <h2>Inteligencia artificial (opcional, apagada por defecto)</h2>
 <p>Solo si la activas y pones tu propia clave de Anthropic, y aceptas el aviso de permiso dentro de la app, MyFinances envía a Anthropic el texto de un extracto o correo que ningún lector entiende y los nombres de comercios que no conoce, para leerlos y categorizarlos. Antes de enviarla, la app <strong>quita los datos personales</strong>: correos, números de documento, números de cuenta y tarjeta, teléfonos y el nombre del titular. El envío va directamente de tu iPhone a Anthropic con tu clave y se rige por las políticas de Anthropic.</p>
+
+<h2>En Android</h2>
+<p>Tus cuentas, movimientos, extractos e inversiones se guardan en el almacenamiento privado de la app en tu teléfono. No hay sincronización en la nube; el respaldo es un archivo que tú guardas donde quieras.</p>
+<p><strong>Lectura de notificaciones (opcional).</strong> Solo si la activas, después de un aviso que explica qué hace, la app lee las notificaciones de las apps de tus bancos (por ejemplo Bancolombia, Nequi, Nu, Davivienda) y los SMS que vengan de un banco, para registrar compras y transferencias. Las notificaciones de cualquier otra app se ignoran y no se guardan. Todo se procesa en tu teléfono y nada se envía a ningún servidor. Puedes apagarla cuando quieras en los ajustes del teléfono.</p>
+<p><strong>Extractos en PDF.</strong> Los abres tú desde el teléfono; si tienen clave, la escribes para abrirlos y no se guarda.</p>
+<p><strong>Borrar tus datos en Android:</strong> desinstala la app o ve a Ajustes del teléfono → Apps → MyFinances → Almacenamiento → Borrar datos.</p>
 
 <h2>Tasa de cambio</h2>
 <p>Para mostrar los dólares en pesos, la app consulta la TRM oficial en datos.gov.co. Esa consulta no incluye ningún dato tuyo.</p>
@@ -79,6 +85,12 @@ PRIVACY = {
 <h2>Artificial intelligence (optional, off by default)</h2>
 <p>Only if you turn it on and enter your own Anthropic key, and accept the permission prompt in the app, MyFinances sends Anthropic the text of a statement or email that no reader understands and the names of unknown merchants, to read and categorize them. Before sending, the app <strong>removes personal data</strong>: emails, ID numbers, account and card numbers, phone numbers and the account holder's name. The request goes straight from your iPhone to Anthropic with your key and is governed by Anthropic's policies.</p>
 
+<h2>On Android</h2>
+<p>Your accounts, transactions, statements and investments are stored in the app's private storage on your phone. There's no cloud sync; backups are a file you save wherever you choose.</p>
+<p><strong>Notification reading (optional).</strong> Only if you turn it on, after a notice that explains what it does, the app reads notifications from your banking apps (for example Bancolombia, Nequi, Nu, Davivienda) and text messages from a bank, to record purchases and transfers. Notifications from any other app are ignored and never stored. Everything is processed on your phone and nothing is sent to any server. You can turn it off anytime in your phone settings.</p>
+<p><strong>PDF statements.</strong> You open them from your phone; if they have a password, you type it to open them and it isn't saved.</p>
+<p><strong>Delete your data on Android:</strong> uninstall the app, or go to phone Settings → Apps → MyFinances → Storage → Clear data.</p>
+
 <h2>Exchange rate</h2>
 <p>To show dollars in pesos, the app fetches the official exchange rate (TRM) from datos.gov.co. That request contains none of your data.</p>
 
@@ -110,6 +122,12 @@ PRIVACY = {
 
 <h2>Inteligência artificial (opcional, desativada por padrão)</h2>
 <p>Somente se você ativá-la e informar sua própria chave da Anthropic, e aceitar o aviso de permissão no app, o MyFinances envia à Anthropic o texto de um extrato ou e-mail que nenhum leitor entende e os nomes de estabelecimentos desconhecidos, para lê-los e categorizá-los. Antes do envio, o app <strong>remove os dados pessoais</strong>: e-mails, números de documento, números de conta e cartão, telefones e o nome do titular. O envio vai direto do seu iPhone para a Anthropic com a sua chave e segue as políticas da Anthropic.</p>
+
+<h2>No Android</h2>
+<p>Suas contas, movimentações, extratos e investimentos ficam no armazenamento privado do app no seu telefone. Não há sincronização na nuvem; o backup é um arquivo que você salva onde quiser.</p>
+<p><strong>Leitura de notificações (opcional).</strong> Somente se você ativar, depois de um aviso que explica o que faz, o app lê as notificações dos apps dos seus bancos (por exemplo Bancolombia, Nequi, Nu, Davivienda) e os SMS que vierem de um banco, para registrar compras e transferências. As notificações de qualquer outro app são ignoradas e não são salvas. Tudo é processado no seu telefone e nada é enviado a nenhum servidor. Você pode desativar quando quiser nas configurações do telefone.</p>
+<p><strong>Extratos em PDF.</strong> Você os abre no telefone; se tiverem senha, você a digita para abri-los e ela não é salva.</p>
+<p><strong>Apagar seus dados no Android:</strong> desinstale o app ou vá em Configurações do telefone → Apps → MyFinances → Armazenamento → Limpar dados.</p>
 
 <h2>Taxa de câmbio</h2>
 <p>Para mostrar dólares em pesos, o app consulta a taxa oficial (TRM) em datos.gov.co. Essa consulta não inclui nenhum dado seu.</p>
