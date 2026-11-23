@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 REPO = "https://github.com/Osinisterra/myfinances-site"
-EMAIL = "omarsinisterra00@gmail.com"
+EMAIL = "myfinancesapp.co@gmail.com"
 CONTACT = "mailto:" + EMAIL + "?subject=MyFinances"
 UPDATED = {"es": "21 de noviembre de 2026", "en": "November 21, 2026", "pt": "21 de novembro de 2026"}
 
