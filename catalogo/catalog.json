@@ -1,0 +1,1150 @@
+{
+ "schemaVersion": 1,
+ "catalogVersion": 2,
+ "updated": "2026-11-22",
+ "note": "Catálogo de entidades, remitentes y plantillas de correos bancarios de Colombia. Separado del motor: se puede actualizar sin publicar la app. Solo patrones confirmados (VERIFIED_REAL) o documentados por fuente identificable (DOCUMENTED); lo inferido nunca registra solo.",
+ "evidenceConfidence": {
+  "VERIFIED_REAL": 95,
+  "DOCUMENTED": 85,
+  "INFERRED": 60,
+  "SYNTHETIC": 40
+ },
+ "thresholds": {
+  "bank": 80,
+  "classification": 80,
+  "extraction": 75
+ },
+ "types": [
+  {
+   "id": "PURCHASE",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "purchase"
+  },
+  {
+   "id": "QR_PAYMENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "TRANSFER_SENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "transfer"
+  },
+  {
+   "id": "TRANSFER_RECEIVED",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "DEPOSIT",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "WITHDRAWAL",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "withdrawal"
+  },
+  {
+   "id": "BILL_PAYMENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "PSE_PAYMENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "CARD_PAYMENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "CARD_ADVANCE",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "withdrawal"
+  },
+  {
+   "id": "PAYROLL",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "LOAN_PAYMENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "FEE",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "INTEREST",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "REFUND",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "REVERSAL",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "TOP_UP",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "CASHBACK",
+   "category": "transaction",
+   "direction": "CREDIT",
+   "appKind": "deposit"
+  },
+  {
+   "id": "OTHER_TRANSACTION",
+   "category": "transaction",
+   "direction": "UNKNOWN",
+   "appKind": null
+  },
+  {
+   "id": "STATEMENT_AVAILABLE",
+   "category": "document",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "PAYMENT_RECEIPT",
+   "category": "document",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "DECLINED",
+   "category": "informational",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "SECURITY_ALERT",
+   "category": "security",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "MARKETING",
+   "category": "marketing",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "TRANSFER_SCHEDULED",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "transfer"
+  },
+  {
+   "id": "AUTOMATIC_DEBIT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "UTILITY_PAYMENT",
+   "category": "transaction",
+   "direction": "DEBIT",
+   "appKind": "payment"
+  },
+  {
+   "id": "TRANSFER_RECEIPT",
+   "category": "document",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "PORTAL_LOGIN",
+   "category": "security",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "INFORMATIONAL",
+   "category": "informational",
+   "direction": "NEUTRAL",
+   "appKind": null
+  },
+  {
+   "id": "UNKNOWN",
+   "category": "unknown",
+   "direction": "UNKNOWN",
+   "appKind": null
+  }
+ ],
+ "entities": [
+  {
+   "id": "bancolombia",
+   "name": "Bancolombia",
+   "kind": "bank",
+   "institution": "bancolombia",
+   "domains": [
+    {
+     "domain": "notificacionesbancolombia.com",
+     "evidence": "VERIFIED_REAL",
+     "source": "Remitente de correos reales"
+    },
+    {
+     "domain": "bancolombia.com.co",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "bancolombia"
+   ],
+   "documentaryCoverage": 70,
+   "notes": "Plantillas confirmadas con correos reales anonimizados (compras, transferencias, QR, pagos, nómina, abonos, retiros)."
+  },
+  {
+   "id": "nequi",
+   "name": "Nequi",
+   "kind": "bank",
+   "institution": "nequi",
+   "domains": [
+    {
+     "domain": "nequi.com.co",
+     "evidence": "VERIFIED_REAL",
+     "source": "Remitente de correos reales"
+    }
+   ],
+   "aliases": [
+    "nequi"
+   ],
+   "documentaryCoverage": 50,
+   "notes": "Pago de facturas confirmado con correo real; pagos y Bre-B documentados por fuente pública."
+  },
+  {
+   "id": "davivienda",
+   "name": "Davivienda",
+   "kind": "bank",
+   "institution": "davivienda",
+   "domains": [
+    {
+     "domain": "davivienda.com",
+     "evidence": "DOCUMENTED",
+     "source": "Proyecto público trackit"
+    }
+   ],
+   "aliases": [
+    "davivienda"
+   ],
+   "documentaryCoverage": 35,
+   "notes": "Aviso de movimiento de cuenta documentado por fuente pública; sin correo real todavía."
+  },
+  {
+   "id": "nu",
+   "name": "Nu Colombia",
+   "kind": "bank",
+   "institution": "nu",
+   "domains": [
+    {
+     "domain": "nu.com.co",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "nu colombia",
+    "nubank"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas: todo queda por revisar."
+  },
+  {
+   "id": "bbva",
+   "name": "BBVA Colombia",
+   "kind": "bank",
+   "institution": "bbva",
+   "domains": [
+    {
+     "domain": "bbva.com.co",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "bbva"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas."
+  },
+  {
+   "id": "lulo",
+   "name": "Lulo Bank",
+   "kind": "bank",
+   "institution": "lulo",
+   "domains": [
+    {
+     "domain": "lulobank.com",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "lulo bank",
+    "lulobank"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas."
+  },
+  {
+   "id": "falabella",
+   "name": "Banco Falabella",
+   "kind": "bank",
+   "institution": "falabella",
+   "domains": [
+    {
+     "domain": "bancofalabella.com.co",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "banco falabella",
+    "bancofalabella"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas."
+  },
+  {
+   "id": "bancodebogota",
+   "name": "Banco de Bogotá",
+   "kind": "bank",
+   "institution": "bancodebogota",
+   "domains": [
+    {
+     "domain": "bancodebogota.com",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "banco de bogota",
+    "banco de bogotá",
+    "bancodebogota"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas."
+  },
+  {
+   "id": "cajasocial",
+   "name": "Banco Caja Social",
+   "kind": "bank",
+   "institution": "cajasocial",
+   "domains": [
+    {
+     "domain": "bancocajasocial.com",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "caja social",
+    "bancocajasocial"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas."
+  },
+  {
+   "id": "avvillas",
+   "name": "Banco AV Villas",
+   "kind": "bank",
+   "institution": "avvillas",
+   "domains": [
+    {
+     "domain": "avvillas.com.co",
+     "evidence": "INFERRED",
+     "source": "Dominio del sitio oficial de la entidad"
+    }
+   ],
+   "aliases": [
+    "av villas",
+    "avvillas"
+   ],
+   "documentaryCoverage": 0,
+   "notes": "Solo identificación por dominio oficial (inferido). Sin plantillas."
+  },
+  {
+   "id": "bancodeoccidente",
+   "name": "Banco de Occidente",
+   "kind": "bank",
+   "institution": "bancodeoccidente",
+   "domains": [
+    {
+     "domain": "bancodeoccidente.com.co",
+     "evidence": "DOCUMENTED",
+     "source": "Documentación oficial de seguridad de Banco de Occidente (aportada por el usuario, 22-11-2026)"
+    },
+    {
+     "domain": "emailbancodeoccidente.com.co",
+     "evidence": "DOCUMENTED",
+     "source": "Documentación oficial de seguridad de Banco de Occidente (aportada por el usuario, 22-11-2026)"
+    }
+   ],
+   "aliases": [
+    "banco de occidente",
+    "bancodeoccidente"
+   ],
+   "documentaryCoverage": 15,
+   "notes": "Dominios y remitentes documentados por el banco. Extractos en PDF con clave (documentado). Sin muestras reales: ninguna plantilla de movimientos todavía; esos correos quedan por revisar.",
+   "pendingTypes": [
+    {
+     "type": "PURCHASE",
+     "status": "pending_validation"
+    },
+    {
+     "type": "TRANSFER_SENT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "TRANSFER_RECEIVED",
+     "status": "pending_validation"
+    },
+    {
+     "type": "TRANSFER_SCHEDULED",
+     "status": "pending_validation"
+    },
+    {
+     "type": "DEPOSIT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "WITHDRAWAL",
+     "status": "pending_validation"
+    },
+    {
+     "type": "PSE_PAYMENT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "UTILITY_PAYMENT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "AUTOMATIC_DEBIT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "CARD_PAYMENT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "DECLINED",
+     "status": "pending_validation"
+    },
+    {
+     "type": "REFUND",
+     "status": "pending_validation"
+    },
+    {
+     "type": "REVERSAL",
+     "status": "pending_validation"
+    },
+    {
+     "type": "PAYMENT_RECEIPT",
+     "status": "pending_validation"
+    },
+    {
+     "type": "TRANSFER_RECEIPT",
+     "status": "pending_validation"
+    }
+   ]
+  },
+  {
+   "id": "pse",
+   "name": "PSE (ACH Colombia)",
+   "kind": "payment_network",
+   "institution": null,
+   "domains": [
+    {
+     "domain": "achcolombia.com.co",
+     "evidence": "DOCUMENTED",
+     "source": "Proyecto público trackit"
+    }
+   ],
+   "aliases": [
+    "pse"
+   ],
+   "documentaryCoverage": 40,
+   "notes": "Comprobantes de pagos PSE. No dice desde qué banco se pagó: nunca se registra solo (puede duplicar el aviso del banco)."
+  }
+ ],
+ "senders": [
+  {
+   "address": "alertasynotificaciones@ayn.notificacionesbancolombia.com",
+   "entity": "bancolombia",
+   "displayName": "Alertas y Notificaciones Bancolombia",
+   "category": "transactional",
+   "types": [
+    "PURCHASE",
+    "TRANSFER_SENT",
+    "TRANSFER_RECEIVED",
+    "PAYROLL",
+    "BILL_PAYMENT",
+    "QR_PAYMENT",
+    "WITHDRAWAL",
+    "DECLINED"
+   ],
+   "confidence": 95,
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02)",
+   "status": "active",
+   "updated": "2026-11-02"
+  },
+  {
+   "address": "alertasynotificaciones@an.notificacionesbancolombia.com",
+   "entity": "bancolombia",
+   "displayName": "Alertas y Notificaciones Bancolombia",
+   "category": "transactional",
+   "types": [
+    "BILL_PAYMENT"
+   ],
+   "confidence": 95,
+   "evidence": "VERIFIED_REAL",
+   "source": "Correo real del usuario, anonimizado (2026-11-06)",
+   "status": "active",
+   "updated": "2026-11-06"
+  },
+  {
+   "address": "somos@nequi.com.co",
+   "entity": "nequi",
+   "displayName": "Nequi",
+   "category": "transactional",
+   "types": [
+    "BILL_PAYMENT",
+    "PURCHASE"
+   ],
+   "confidence": 95,
+   "evidence": "VERIFIED_REAL",
+   "source": "Correo real del usuario, anonimizado (2026-11-03)",
+   "status": "active",
+   "updated": "2026-11-03"
+  },
+  {
+   "address": "notificaciones@nequi.com.co",
+   "entity": "nequi",
+   "displayName": "Nequi",
+   "category": "transactional",
+   "types": [
+    "TRANSFER_SENT",
+    "TRANSFER_RECEIVED"
+   ],
+   "confidence": 85,
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit (Steven2128/trackit), parser de Nequi Bre-B",
+   "status": "active",
+   "updated": "2026-11-22"
+  },
+  {
+   "address": "somos@notificaciones.nequi.com.co",
+   "entity": "nequi",
+   "displayName": "Nequi",
+   "category": "marketing",
+   "types": [
+    "MARKETING"
+   ],
+   "confidence": 85,
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit: remitente de publicidad de Nequi",
+   "status": "active",
+   "updated": "2026-11-22"
+  },
+  {
+   "address": "banco_davivienda@davivienda.com",
+   "entity": "davivienda",
+   "displayName": "Davivienda",
+   "category": "transactional",
+   "types": [
+    "PURCHASE",
+    "DEPOSIT",
+    "TRANSFER_SENT",
+    "WITHDRAWAL"
+   ],
+   "confidence": 85,
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de Davivienda",
+   "status": "active",
+   "updated": "2026-11-22"
+  },
+  {
+   "address": "serviciopse@achcolombia.com.co",
+   "entity": "pse",
+   "displayName": "PSE",
+   "category": "transactional",
+   "types": [
+    "PSE_PAYMENT"
+   ],
+   "confidence": 85,
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de PSE",
+   "status": "active",
+   "updated": "2026-11-22"
+  },
+  {
+   "address": "notificaciones@bancodeoccidente.com.co",
+   "entity": "bancodeoccidente",
+   "displayName": "Banco de Occidente",
+   "category": "security",
+   "types": [
+    "PORTAL_LOGIN",
+    "SECURITY_ALERT"
+   ],
+   "confidence": 85,
+   "evidence": "DOCUMENTED",
+   "source": "Documentación oficial de seguridad de Banco de Occidente (aportada por el usuario, 22-11-2026): notificación de ingreso al Portal Transaccional",
+   "status": "active",
+   "updated": "2026-11-22"
+  },
+  {
+   "address": "email@emailbancodeoccidente.com.co",
+   "entity": "bancodeoccidente",
+   "displayName": "Banco de Occidente",
+   "category": "general",
+   "types": [],
+   "confidence": 85,
+   "evidence": "DOCUMENTED",
+   "source": "Documentación oficial de seguridad de Banco de Occidente (aportada por el usuario, 22-11-2026): dirección de referencia; no se sabe qué tipos envía",
+   "status": "active",
+   "updated": "2026-11-22"
+  }
+ ],
+ "templates": [
+  {
+   "id": "bancolombia.declined",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "informational",
+   "type": "DECLINED",
+   "direction": "NEUTRAL",
+   "pattern": "Bancolombia:.*?(?:no fue exitosa|no se afect)",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": []
+  },
+  {
+   "id": "bancolombia.purchase",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "PURCHASE",
+   "direction": "DEBIT",
+   "pattern": "Bancolombia: Compraste (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) en (?<merchant>.+?)(?: con tu (?<cardType>T\\.Cred|T\\.Deb|Tarjeta Debito|Tarjeta)\\S* ?\\*+(?<last4>\\d{4}))?, el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "extract": [
+    "asociada a (?:tu )?T\\.Cred\\S* ?\\*+(?<last4>\\d{4})"
+   ],
+   "rules": [
+    {
+     "field": "cardType",
+     "startsWith": "T.Deb",
+     "accountKind": "savings"
+    },
+    {
+     "field": "cardType",
+     "startsWith": "Tarjeta Debito",
+     "accountKind": "savings"
+    }
+   ],
+   "accountKind": "creditCard",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "bancolombia.transfer_sent",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "TRANSFER_SENT",
+   "direction": "DEBIT",
+   "pattern": "Bancolombia: Transferiste (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) desde tu cuenta \\*+(?<last4>\\d{4}) a la cuenta \\*?(?<counterpartyAccount>\\w+) el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "accountKind": "savings",
+   "description": "Transferencia a cuenta *{counterpartyAccount|last4}",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "bancolombia.qr",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "QR_PAYMENT",
+   "direction": "DEBIT",
+   "pattern": "[Pp]agaste (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) por c[oó]digo QR desde tu cuenta \\*+(?<last4>\\d{4}).*?el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "accountKind": "savings",
+   "description": "Pago con código QR",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "bancolombia.bill_payment",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "BILL_PAYMENT",
+   "direction": "DEBIT",
+   "pattern": "Pagaste (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) a (?<merchant>.+?) desde tu (?:cuenta|producto) \\**(?<last4>\\d{4}) el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "accountKind": "savings",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "bancolombia.payroll",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "PAYROLL",
+   "direction": "CREDIT",
+   "pattern": "Recibiste un pago de [Nn][oó]mina de (?<counterparty>.+?) por (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) en tu cuenta(?: de \\S+)?(?: \\*+(?<last4>\\d{4}))? el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "accountKind": "savings",
+   "description": "Nómina {counterparty}",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "bancolombia.transfer_received",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "TRANSFER_RECEIVED",
+   "direction": "CREDIT",
+   "pattern": "Recibiste (?:una transferencia|un pago|un abono) (?:por|de) (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) (?:de|por) (?<counterparty>.+?) en tu cuenta(?: de \\S+)?(?: \\*+(?<last4>\\d{4}))? el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "accountKind": "savings",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "bancolombia.withdrawal",
+   "entity": "bancolombia",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correos reales del usuario, anonimizados (2026-11-02 a 2026-11-06)",
+   "category": "transaction",
+   "type": "WITHDRAWAL",
+   "direction": "DEBIT",
+   "pattern": "Retiraste (?<currency>COP|USD|\\$) ?(?<amount>[\\d.,]+) en (?<place>.+?)(?: de tu (?:cuenta|T\\.Deb\\S*) ?\\*+(?<last4>\\d{4}))?,? el (?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{2,4})(?: a las)? (?<hour>\\d{1,2}):(?<minute>\\d{2})",
+   "accountKind": "savings",
+   "description": "Retiro {place}",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "nequi.bill_payment",
+   "entity": "nequi",
+   "senders": [
+    "somos@nequi.com.co"
+   ],
+   "status": "active",
+   "evidence": "VERIFIED_REAL",
+   "source": "Correo real del usuario, anonimizado (2026-11-03)",
+   "category": "transaction",
+   "type": "BILL_PAYMENT",
+   "direction": "DEBIT",
+   "pattern": "Listo tu pago en (?<merchant>.+?) Pagaste con Nequi tu factura por \\$ ?(?<amount>[\\d.,]+)",
+   "extract": [
+    "Fecha: ?(?<day>\\d{1,2})/(?<month>[A-Za-z]{3})/(?<year>\\d{4})"
+   ],
+   "accountKind": "wallet",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "nequi.purchase",
+   "entity": "nequi",
+   "senders": [
+    "somos@nequi.com.co"
+   ],
+   "status": "active",
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de Nequi",
+   "category": "transaction",
+   "type": "PURCHASE",
+   "direction": "DEBIT",
+   "pattern": "Hiciste un pago en (?<merchant>.+?) por \\$ ?(?<amount>[\\d.,]+)",
+   "extract": [
+    "Fecha: ?El (?<day>\\d{1,2}) de (?<month>\\p{L}+) de (?<year>\\d{4})",
+    "Hora: ?(?<hour>\\d{1,2}):(?<minute>\\d{2}) ?(?<ampm>[apAP]\\.? ?[mM]\\.?)",
+    "CUS:? ?(?<reference>\\d+)"
+   ],
+   "accountKind": "wallet",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "nequi.breb_received",
+   "entity": "nequi",
+   "senders": [
+    "notificaciones@nequi.com.co"
+   ],
+   "status": "active",
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de Nequi Bre-B",
+   "category": "transaction",
+   "type": "TRANSFER_RECEIVED",
+   "direction": "CREDIT",
+   "pattern": "Recibiste \\$? ?(?<amount>[\\d.,]+) de (?<counterparty>.+?) el (?<day>\\d{1,2}) de (?<month>\\p{L}+) de (?<year>\\d{4}) a las (?<hour>\\d{1,2}):(?<minute>\\d{2}) ?(?<ampm>[apAP]\\.? ?[mM]\\.?)",
+   "accountKind": "wallet",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "nequi.breb_sent",
+   "entity": "nequi",
+   "senders": [
+    "notificaciones@nequi.com.co"
+   ],
+   "status": "active",
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de Nequi Bre-B",
+   "category": "transaction",
+   "type": "TRANSFER_SENT",
+   "direction": "DEBIT",
+   "pattern": "Enviaste de manera exitosa \\$? ?(?<amount>[\\d.,]+) a la llave (?<key>\\S+) de (?<counterparty>.+?) el (?<day>\\d{1,2}) de (?<month>\\p{L}+) de (?<year>\\d{4}) a las (?<hour>\\d{1,2}):(?<minute>\\d{2}) ?(?<ampm>[apAP]\\.? ?[mM]\\.?)",
+   "accountKind": "wallet",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "davivienda.account_movement",
+   "entity": "davivienda",
+   "senders": [
+    "banco_davivienda@davivienda.com"
+   ],
+   "status": "active",
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de Davivienda",
+   "category": "transaction",
+   "type": "PURCHASE",
+   "direction": "DEBIT",
+   "pattern": "movimiento de su (?<product>.+?) terminad\\S* (?:\\(o\\) )?en \\*+(?<last4>\\d{4}).*?Fecha: ?(?<year>\\d{4})/(?<month>\\d{2})/(?<day>\\d{2}) Hora: ?(?<hour>\\d{1,2}):(?<minute>\\d{2})(?::\\d{2})? Valor Transacci\\S*: ?\\$ ?(?<amount>[\\d.,]+) Clase de Movimiento: ?(?<kind>.+?) Lugar de Transacci\\S*: ?(?<merchant>.+?)(?: Atentamente|$)",
+   "rules": [
+    {
+     "field": "kind",
+     "startsWith": "Abono",
+     "type": "DEPOSIT",
+     "direction": "CREDIT"
+    },
+    {
+     "field": "kind",
+     "contains": "Transferencia",
+     "type": "TRANSFER_SENT",
+     "direction": "DEBIT"
+    },
+    {
+     "field": "kind",
+     "startsWith": "Retiro",
+     "type": "WITHDRAWAL",
+     "direction": "DEBIT"
+    },
+    {
+     "field": "product",
+     "contains": "Cr",
+     "accountKind": "creditCard"
+    }
+   ],
+   "accountKind": "savings",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "pse.approved",
+   "entity": "pse",
+   "senders": [
+    "serviciopse@achcolombia.com.co"
+   ],
+   "status": "active",
+   "evidence": "DOCUMENTED",
+   "source": "Proyecto público trackit, parser de PSE (campos documentados, orden inferido)",
+   "category": "transaction",
+   "type": "PSE_PAYMENT",
+   "direction": "DEBIT",
+   "subject": "(?i)PSE.*Aprobada",
+   "pattern": "Valor(?: de la transacci\\S*)?:? ?\\$ ?(?<amount>[\\d.,]+)",
+   "extract": [
+    "Empresa:? (?<merchant>.+?) (?:Descripci|NIT|Fecha|Valor|CUS|$)",
+    "Fecha de la transacci\\S*:? ?(?<day>\\d{1,2})/(?<month>\\d{1,2})/(?<year>\\d{4})(?: (?<hour>\\d{1,2}):(?<minute>\\d{2}))?",
+    "CUS:? ?(?<reference>\\d+)"
+   ],
+   "currency": "COP",
+   "autoAccept": false,
+   "required": [
+    "amount"
+   ]
+  },
+  {
+   "id": "occidente.portal_login",
+   "entity": "bancodeoccidente",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "INFERRED",
+   "source": "Existe el aviso (documentado); redacción inferida, pendiente de validar con un correo real",
+   "category": "security",
+   "type": "PORTAL_LOGIN",
+   "direction": "NEUTRAL",
+   "pattern": "(?i)(?:ingres\\S*|acces\\S*|inicio de sesi[oó]n|iniciaste sesi[oó]n)[^.]{0,60}Portal Transaccional|Portal Transaccional[^.]{0,60}(?:ingres\\S*|acces\\S*|inicio de sesi[oó]n)",
+   "currency": "COP",
+   "autoAccept": false,
+   "required": []
+  },
+  {
+   "id": "occidente.statement",
+   "entity": "bancodeoccidente",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "INFERRED",
+   "source": "Documentación oficial: extractos digitales por correo como PDF protegido con clave. Redacción del correo inferida.",
+   "category": "document",
+   "type": "STATEMENT_AVAILABLE",
+   "direction": "NEUTRAL",
+   "subject": "(?i)extracto|estado de cuenta",
+   "pattern": "(?i)extracto|estado de cuenta",
+   "requiresPdfAttachment": true,
+   "extract": [
+    "(?i)(?<product>tarjeta de cr[eé]dito|cuenta de ahorros?|cuenta corriente|cr[eé]dito de vivienda|cr[eé]dito|leasing|cdt)",
+    "\\*+(?<last4>\\d{4})"
+   ],
+   "rules": [
+    {
+     "field": "product",
+     "startsWith": "tarjeta",
+     "accountKind": "creditCard"
+    },
+    {
+     "field": "product",
+     "startsWith": "cuenta de ahorro",
+     "accountKind": "savings"
+    },
+    {
+     "field": "product",
+     "startsWith": "cuenta corriente",
+     "accountKind": "savings"
+    }
+   ],
+   "currency": "COP",
+   "autoAccept": false,
+   "required": []
+  },
+  {
+   "id": "generic.security",
+   "entity": "*",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "INFERRED",
+   "source": "Patrón general de avisos de seguridad",
+   "category": "security",
+   "type": "SECURITY_ALERT",
+   "direction": "NEUTRAL",
+   "pattern": "(?i)(?:c[oó]digo (?:de )?(?:seguridad|verificaci[oó]n)|clave din[aá]mica|inicio de sesi[oó]n|iniciaste sesi[oó]n|ingreso a tu (?:app|banca)|cambio de (?:clave|contrase[nñ]a)|nuevo dispositivo)",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": []
+  },
+  {
+   "id": "generic.statement",
+   "entity": "*",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "INFERRED",
+   "source": "Patrón general: asunto con extracto y PDF adjunto",
+   "category": "document",
+   "type": "STATEMENT_AVAILABLE",
+   "direction": "NEUTRAL",
+   "subject": "(?i)extracto",
+   "requiresPdfAttachment": true,
+   "currency": "COP",
+   "autoAccept": true,
+   "required": []
+  },
+  {
+   "id": "generic.declined",
+   "entity": "*",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "INFERRED",
+   "source": "Patrón general de transacciones rechazadas",
+   "category": "informational",
+   "type": "DECLINED",
+   "direction": "NEUTRAL",
+   "pattern": "(?i)(?:fue rechazad|transacci[oó]n rechazada|no fue exitosa|declinad)",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": []
+  },
+  {
+   "id": "generic.marketing",
+   "entity": "*",
+   "senders": [
+    "*"
+   ],
+   "status": "active",
+   "evidence": "INFERRED",
+   "source": "Patrón general de publicidad (asunto promocional o remitente de publicidad)",
+   "category": "marketing",
+   "type": "MARKETING",
+   "direction": "NEUTRAL",
+   "subject": "(?i)(?:oferta|promo|descuento|beneficio|aprovecha|gana |sorteo|black friday|exclusiv|regalo|\\d+ ?%)",
+   "currency": "COP",
+   "autoAccept": true,
+   "required": [],
+   "alsoWhen": [
+    "listUnsubscribe",
+    "marketingSender"
+   ]
+  }
+ ],
+ "selfTests": [
+  {
+   "from": "alertasynotificaciones@ayn.notificacionesbancolombia.com",
+   "subject": "Alertas y Notificaciones",
+   "text": "Bancolombia: Compraste COP12.345,00 en TIENDA PRUEBA con tu T.Cred *0000, el 01/01/2026 a las 10:00. Estamos cerca.",
+   "expect": {
+    "template": "bancolombia.purchase",
+    "type": "PURCHASE",
+    "amount": "12345"
+   }
+  },
+  {
+   "from": "somos@nequi.com.co",
+   "subject": "Comprobante de Pago Prueba",
+   "text": "Listo tu pago en Prueba Pagaste con Nequi tu factura por $1.000 Estado: Exitoso Fecha: 02/Ene/2026",
+   "expect": {
+    "template": "nequi.bill_payment",
+    "type": "BILL_PAYMENT",
+    "amount": "1000"
+   }
+  },
+  {
+   "from": "banco_davivienda@davivienda.com",
+   "subject": "DAVIVIENDA",
+   "text": "Le informamos que se ha registrado el siguiente movimiento de su Cta de Ahorros terminada en ****0000: Fecha: 2026/01/03 Hora: 08:30:00 Valor Transacción: $5,000 Clase de Movimiento: Compra Lugar de Transacción: TIENDA PRUEBA Atentamente",
+   "expect": {
+    "template": "davivienda.account_movement",
+    "type": "PURCHASE",
+    "amount": "5000"
+   }
+  },
+  {
+   "from": "notificaciones@bancodeoccidente.com.co",
+   "subject": "Notificación de ingreso",
+   "text": "Te informamos que se registró un ingreso al Portal Transaccional el 01/01/2026.",
+   "expect": {
+    "template": "occidente.portal_login",
+    "type": "PORTAL_LOGIN",
+    "amount": ""
+   }
+  }
+ ]
+}
