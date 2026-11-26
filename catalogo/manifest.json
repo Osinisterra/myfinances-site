@@ -1,5 +1,6 @@
 {
   "catalogVersion": 2,
   "url": "https://osinisterra.github.io/myfinances-site/catalogo/catalog.json",
-  "sha256": "92d3bbd13f5a4d62fb50d0b7bcaeabb765b8f69b13234570c52305aa7cb738ad"
+  "sha256": "92d3bbd13f5a4d62fb50d0b7bcaeabb765b8f69b13234570c52305aa7cb738ad",
+  "signature": "MEYCIQCjN6kvOj6q666vPVEN8YMGMh0x8/pVEpZPHV8wac/fHgIhAPyy0ax382jv+eNXX1VtK3zKqiHY2Kws4toq4WX+CdD6"
 }
