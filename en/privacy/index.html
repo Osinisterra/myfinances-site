@@ -12,45 +12,50 @@
 <header><a class="brand" href="../../en/"><img src="../../icon.png" alt="">MyFinances</a><nav><a class="on" href="../../en/privacy/">Privacy</a><a class="" href="../../en/support/">Support</a></nav></header>
 <main>
 <h1>Privacy policy</h1>
-<p class="lead">In short: <strong>MyFinances does not collect your data.</strong> The only thing that can leave is what you choose to send with "Share format", without personal data. There are no developer servers, user accounts, ads, analytics or tracking. The developer cannot see your information.</p>
+<p class="lead">In short: <strong>MyFinances does not collect your financial data.</strong> There are no developer servers with your information, user accounts, ads, analytics or tracking. The developer cannot see your accounts or transactions. The only thing that can reach the developer is text without personal data that you choose to send with "Share format" (see below).</p>
 
-<h2>Where your data is stored</h2>
-<p>Your accounts, transactions, statements, investments and budgets are stored on your iPhone, protected by device encryption. If iCloud is on, the app syncs them to <strong>your own iCloud</strong> (CloudKit private database), which only you can read. Statement passwords and the email session are kept in the iPhone Keychain and are not synced.</p>
+<h2>Where your data is stored (iPhone)</h2>
+<p>Your accounts, transactions, statements, investments and budgets are stored on your iPhone, protected by the device's encryption. If iCloud is on, the app syncs them with <strong>your own iCloud</strong> (CloudKit private database), which only you can read. <strong>Anything that comes from Gmail never goes to iCloud</strong>: it stays on the iPhone that read it, and each device with Gmail connected reads it on its own. Statement passwords and the email session are stored in the iPhone Keychain and are not synced.</p>
 
-<h2>Email (optional)</h2>
-<p>If you connect Gmail or Outlook, the app requests <strong>read-only</strong> access and only looks for emails from your bank's senders (purchase and transfer alerts, statements). Those emails are read and processed on your phone (iPhone or Android); they are never sent to any developer server or third party.</p>
-<p><strong>Gmail:</strong> MyFinances' use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Specifically: Gmail data is only used to record your transactions inside the app; it is never sent to any other server or through "Share format"; it is not used for advertising, credit decisions or training AI models; and no person reads it. The app never stores your Google password. You can disconnect email at any time from Settings or from your Google or Microsoft account security settings.</p>
+<h2>Email (optional, iPhone and Android)</h2>
+<p>If you connect Gmail or Outlook, the app asks for <strong>read-only</strong> access and only looks for emails from bank senders (purchase, transfer and statement notices). Those emails are read and processed on your phone, and the app keeps only the transaction sentence.</p>
+<p><strong>Gmail data never leaves your phone:</strong> it is not sent to any developer or third-party server, not copied to iCloud, not used with cloud AI, and it cannot be sent with "Share format", not even after you disconnect Gmail. It is not used for ads or sold.</p>
+<p>You can disconnect email at any time in the app's Settings; when you disconnect Gmail, the app revokes its access in your Google account and offers to delete the stored email text. You can also remove access from your Google or Microsoft account security settings.</p>
+<p><strong>Gmail:</strong> MyFinances' use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Specifically: Gmail data is only used to record your transactions inside the app; it is not used for advertising, credit decisions or training AI models; and no person reads it. The app never stores your Google password.</p>
 
 <h2>PDF statements</h2>
-<p>Statements you import (or that arrive in your email, if you allow it) are opened and read on your iPhone.</p>
+<p>Statements you import (or that arrive in your email, if you allow it) are opened and read on your phone. If a statement has a password, you can save it for the next ones: it stays encrypted on your phone only (in the iPhone Keychain) and you can delete it in Settings.</p>
 
-<h2>Artificial intelligence (on your iPhone)</h2>
-<p>If no reader understands a statement, the app can read it with Apple's on-device artificial intelligence (Apple Intelligence, on supported models). Everything happens on the phone: <strong>nothing is sent to any server</strong>, neither Apple's nor the developer's.</p>
-
-<h2>On Android</h2>
-<p>Your accounts, transactions, statements and investments are stored in the app's private storage on your phone. There's no cloud sync; backups are a file you save wherever you choose.</p>
-<p><strong>Notification reading (optional).</strong> Only if you turn it on, after a notice that explains what it does, the app reads notifications from your banking apps (for example Bancolombia, Nequi, Nu, Davivienda) and text messages from a bank, to record purchases and transfers. Notifications from any other app are ignored and never stored. Everything is processed on your phone and nothing is sent to any server. You can turn it off anytime in your phone settings.</p>
-<p><strong>PDF statements.</strong> You open them from your phone; if they have a password, you type it to open them and it isn't saved.</p>
-<p><strong>Delete your data on Android:</strong> uninstall the app, or go to phone Settings → Apps → MyFinances → Storage → Clear data.</p>
+<h2>Artificial intelligence</h2>
+<p>When a statement has a format the app doesn't know, the iPhone can read it with Apple's artificial intelligence, <strong>on the iPhone itself</strong>. MyFinances does not use cloud AI.</p>
 
 <h2>Share format (optional)</h2>
-<p>When the app doesn't recognize a notification or email from your bank, you can tap <strong>Share format</strong>. Before sending, the app shows you the exact text that will be sent: only the shape of the sentence, <strong>without amounts, numbers, names, merchants or email addresses</strong>, plus the bank name or the sender's domain and the app version. It is sent only if you tap "Send". It goes to a private spreadsheet of the developer (Google) and is used only so the app can recognize that format for everyone. It is not linked to you: it doesn't include your name, email, phone or any identifier. Once a day the apps also download the updated list of bank formats from this site, without sending any data.</p>
+<p>When you manually add a bank notice or email the app doesn't recognize, it may ask whether you want to share its format so the app recognizes it on its own in the future. It is only sent if you tap "Send", after showing you the exact text. Before sending, the app <strong>removes amounts, numbers, names of people and merchants, emails, keys, ID numbers, phone numbers, addresses and your name</strong>; only the shape of the sentence remains (for example "You bought [amount] at [name]"). It is sent with the bank's name or domain, the system (iPhone or Android) and the app version, to a developer spreadsheet on Google (Google Apps Script). It carries no data that identifies you. It is never offered for anything that came from Gmail. You can choose "Don't ask again".</p>
+
+<h2>Bank catalog</h2>
+<p>Once a day, the app downloads from this site the public list of bank formats, signed by the developer, to recognize new emails without updating the app. That download carries none of your data.</p>
 
 <h2>Exchange rate</h2>
-<p>To show dollars in pesos, the app fetches the official exchange rate (TRM) from datos.gov.co. That request contains none of your data.</p>
+<p>To show dollars in pesos, the app checks the official exchange rate (TRM) at datos.gov.co. That request includes none of your data.</p>
+
+<h2>On Android</h2>
+<p>Your accounts, transactions, statements and investments are stored in the app's private storage on your phone. There is no cloud sync and no automatic Google backup; the backup is a file you save wherever you want.</p>
+<p><strong>Reading notifications (optional).</strong> Only if you turn it on, after a notice that explains what it does, the app reads notifications from your banks' apps (for example Bancolombia, Nequi, Nu, Davivienda) and SMS that come from a bank, to record purchases and transfers. Notifications from any other app are ignored and not stored. Everything is processed on your phone. You can turn it off at any time in your phone's settings.</p>
+<p><strong>Category translation.</strong> The names of categories you create are translated into the other languages on the phone with Google's ML Kit. That library downloads the language model and sends Google technical diagnostic data (phone model, system and app version, performance and errors), encrypted; it does not send your texts or your financial data.</p>
 
 <h2>Notifications</h2>
-<p>Alerts (card payments, budgets, statements) are created on your iPhone.</p>
+<p>Alerts (card payments, budgets, statements) are generated on your phone.</p>
 
 <h2>Deleting your data</h2>
-<p>Delete the app from your iPhone. If you used iCloud, go to iPhone Settings → your name → iCloud → Manage Storage → MyFinances → Delete Data.</p>
+<p><strong>iPhone:</strong> delete the app. If you used iCloud, go to iPhone Settings → your name → iCloud → Manage Storage → MyFinances → Delete Data.</p>
+<p><strong>Android:</strong> uninstall the app or go to phone Settings → Apps → MyFinances → Storage → Clear data.</p>
 
 <h2>Children</h2>
 <p>MyFinances is not directed to children under 13.</p>
 
 <h2>Changes and contact</h2>
-<p>Any change to this policy will be posted here with a new date. For questions, see <a href="../support/">Support</a>.</p>
-<p class="updated">Last updated: November 24, 2026</p></main>
+<p>If this policy changes, it will be posted here with the new date. For questions, write via <a href="../support/">Support</a>.</p>
+<p class="updated">Last updated: November 26, 2026</p></main>
 <p class="langs"><a href="../../privacidad/" hreflang="es">Español</a><a href="../../en/privacy/" hreflang="en">English</a><a href="../../pt/privacidade/" hreflang="pt">Português</a></p>
 </div></body>
 </html>
