@@ -39,7 +39,7 @@ PRIVACY = {
 
 <h2>Correo (opcional, iPhone y Android)</h2>
 <p>Si conectas Gmail u Outlook, la app pide permiso <strong>de solo lectura</strong> y busca únicamente los correos de los remitentes de los bancos (avisos de compras, transferencias y extractos). Esos correos se leen y se procesan en tu teléfono, y la app guarda solo la frase del movimiento.</p>
-<p><strong>Los datos de Gmail nunca salen de tu teléfono:</strong> no se envían a ningún servidor del desarrollador ni de terceros, no se copian a iCloud, no se usan con inteligencia artificial en la nube y no se pueden enviar con «Compartir formato», ni siquiera después de desconectar Gmail. No se usan para publicidad ni se venden.</p>
+<p><strong>Los datos de Gmail nunca salen de tu teléfono:</strong> no se envían a ningún servidor del desarrollador ni de terceros, no se copian a iCloud, no se usan con inteligencia artificial en la nube y no se pueden enviar con «Compartir formato», ni siquiera después de desconectar Gmail. No se usan para publicidad ni se venden. Lo único que sale es lo que tú decides: el respaldo completo que creas en Ajustes, cifrado con tu contraseña y guardado donde tú elijas.</p>
 <p>Puedes desconectar el correo cuando quieras desde Ajustes de la app; al desconectar Gmail, la app le quita su permiso en tu cuenta de Google y te ofrece borrar el texto de los correos guardados. También puedes quitar el permiso desde la configuración de seguridad de tu cuenta de Google o Microsoft.</p>
 <p><strong>Gmail:</strong> el uso y la transferencia a cualquier otra app de la información recibida de las API de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de Uso limitado. En concreto: los datos de Gmail solo se usan para registrar tus movimientos dentro de la app; no se usan para publicidad, para evaluar crédito ni para entrenar modelos de IA; y ninguna persona los lee. La app no guarda tu contraseña de Google.</p>
 
@@ -59,7 +59,7 @@ PRIVACY = {
 <p>Para mostrar los dólares en pesos, la app consulta la TRM oficial en datos.gov.co. Esa consulta no incluye ningún dato tuyo.</p>
 
 <h2>En Android</h2>
-<p>Tus cuentas, movimientos, extractos e inversiones se guardan en el almacenamiento privado de la app en tu teléfono. No hay sincronización en la nube ni copia automática en Google; el respaldo es un archivo que tú guardas donde quieras.</p>
+<p>Tus cuentas, movimientos, extractos e inversiones se guardan en el almacenamiento privado de la app en tu teléfono. No hay sincronización en la nube ni copia automática en Google; el respaldo es un archivo cifrado con una contraseña que tú eliges y que guardas donde quieras. Sin esa contraseña nadie puede abrirlo.</p>
 <p><strong>Lectura de notificaciones (opcional).</strong> Solo si la activas, después de un aviso que explica qué hace, la app lee las notificaciones de las apps de tus bancos (por ejemplo Bancolombia, Nequi, Nu, Davivienda) y los SMS que vengan de un banco, para registrar compras y transferencias. Las notificaciones de cualquier otra app se ignoran y no se guardan. Todo se procesa en tu teléfono. Puedes apagarla cuando quieras en los ajustes del teléfono.</p>
 <p><strong>Traducción de categorías.</strong> Los nombres de las categorías que creas se traducen a los otros idiomas dentro del teléfono con ML Kit de Google. Esa biblioteca descarga el modelo del idioma y envía a Google datos técnicos de diagnóstico (modelo del teléfono, versión del sistema y de la app, rendimiento y errores), cifrados; no envía tus textos ni tus datos financieros.</p>
 
@@ -85,7 +85,7 @@ PRIVACY = {
 
 <h2>Email (optional, iPhone and Android)</h2>
 <p>If you connect Gmail or Outlook, the app asks for <strong>read-only</strong> access and only looks for emails from bank senders (purchase, transfer and statement notices). Those emails are read and processed on your phone, and the app keeps only the transaction sentence.</p>
-<p><strong>Gmail data never leaves your phone:</strong> it is not sent to any developer or third-party server, not copied to iCloud, not used with cloud AI, and it cannot be sent with "Share format", not even after you disconnect Gmail. It is not used for ads or sold.</p>
+<p><strong>Gmail data never leaves your phone:</strong> it is not sent to any developer or third-party server, not copied to iCloud, not used with cloud AI, and it cannot be sent with "Share format", not even after you disconnect Gmail. It is not used for ads or sold. The only thing that leaves is what you decide: the full backup you create in Settings, encrypted with your password and saved wherever you choose.</p>
 <p>You can disconnect email at any time in the app's Settings; when you disconnect Gmail, the app revokes its access in your Google account and offers to delete the stored email text. You can also remove access from your Google or Microsoft account security settings.</p>
 <p><strong>Gmail:</strong> MyFinances' use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Specifically: Gmail data is only used to record your transactions inside the app; it is not used for advertising, credit decisions or training AI models; and no person reads it. The app never stores your Google password.</p>
 
@@ -105,7 +105,7 @@ PRIVACY = {
 <p>To show dollars in pesos, the app checks the official exchange rate (TRM) at datos.gov.co. That request includes none of your data.</p>
 
 <h2>On Android</h2>
-<p>Your accounts, transactions, statements and investments are stored in the app's private storage on your phone. There is no cloud sync and no automatic Google backup; the backup is a file you save wherever you want.</p>
+<p>Your accounts, transactions, statements and investments are stored in the app's private storage on your phone. There is no cloud sync and no automatic Google backup; the backup is a file encrypted with a password you choose, saved wherever you want. Without that password nobody can open it.</p>
 <p><strong>Reading notifications (optional).</strong> Only if you turn it on, after a notice that explains what it does, the app reads notifications from your banks' apps (for example Bancolombia, Nequi, Nu, Davivienda) and SMS that come from a bank, to record purchases and transfers. Notifications from any other app are ignored and not stored. Everything is processed on your phone. You can turn it off at any time in your phone's settings.</p>
 <p><strong>Category translation.</strong> The names of categories you create are translated into the other languages on the phone with Google's ML Kit. That library downloads the language model and sends Google technical diagnostic data (phone model, system and app version, performance and errors), encrypted; it does not send your texts or your financial data.</p>
 
@@ -131,7 +131,7 @@ PRIVACY = {
 
 <h2>E-mail (opcional, iPhone e Android)</h2>
 <p>Se você conectar o Gmail ou o Outlook, o app pede acesso <strong>somente leitura</strong> e busca apenas os e-mails dos remetentes dos bancos (avisos de compras, transferências e extratos). Esses e-mails são lidos e processados no seu telefone, e o app guarda só a frase da movimentação.</p>
-<p><strong>Os dados do Gmail nunca saem do seu telefone:</strong> não são enviados a nenhum servidor do desenvolvedor nem de terceiros, não são copiados para o iCloud, não são usados com inteligência artificial na nuvem e não podem ser enviados com «Compartilhar formato», nem depois de desconectar o Gmail. Não são usados para publicidade nem vendidos.</p>
+<p><strong>Os dados do Gmail nunca saem do seu telefone:</strong> não são enviados a nenhum servidor do desenvolvedor nem de terceiros, não são copiados para o iCloud, não são usados com inteligência artificial na nuvem e não podem ser enviados com «Compartilhar formato», nem depois de desconectar o Gmail. Não são usados para publicidade nem vendidos. A única coisa que sai é o que você decide: o backup completo que você cria em Ajustes, criptografado com a sua senha e salvo onde você escolher.</p>
 <p>Você pode desconectar o e-mail quando quiser nos Ajustes do app; ao desconectar o Gmail, o app remove o próprio acesso na sua conta do Google e oferece apagar o texto dos e-mails guardados. Você também pode remover o acesso nas configurações de segurança da sua conta do Google ou da Microsoft.</p>
 <p><strong>Gmail:</strong> o uso e a transferência para qualquer outro app de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>, incluindo os requisitos de Uso limitado. Ou seja: os dados do Gmail só são usados para registrar suas movimentações no app; não são usados para publicidade, análise de crédito ou treinamento de modelos de IA; e nenhuma pessoa os lê. O app nunca guarda sua senha do Google.</p>
 
@@ -151,7 +151,7 @@ PRIVACY = {
 <p>Para mostrar os dólares em pesos, o app consulta a taxa oficial (TRM) em datos.gov.co. Essa consulta não inclui nenhum dado seu.</p>
 
 <h2>No Android</h2>
-<p>Suas contas, movimentações, extratos e investimentos ficam no armazenamento privado do app no seu telefone. Não há sincronização na nuvem nem backup automático no Google; o backup é um arquivo que você guarda onde quiser.</p>
+<p>Suas contas, movimentações, extratos e investimentos ficam no armazenamento privado do app no seu telefone. Não há sincronização na nuvem nem backup automático no Google; o backup é um arquivo criptografado com uma senha que você escolhe e guarda onde quiser. Sem essa senha ninguém consegue abri-lo.</p>
 <p><strong>Leitura de notificações (opcional).</strong> Só se você ativar, depois de um aviso que explica o que faz, o app lê as notificações dos apps dos seus bancos (por exemplo Bancolombia, Nequi, Nu, Davivienda) e os SMS que vierem de um banco, para registrar compras e transferências. Notificações de qualquer outro app são ignoradas e não são guardadas. Tudo é processado no seu telefone. Você pode desativá-la quando quiser nas configurações do telefone.</p>
 <p><strong>Tradução de categorias.</strong> Os nomes das categorias que você cria são traduzidos para os outros idiomas no próprio telefone com o ML Kit do Google. Essa biblioteca baixa o modelo do idioma e envia ao Google dados técnicos de diagnóstico (modelo do telefone, versão do sistema e do app, desempenho e erros), criptografados; não envia seus textos nem seus dados financeiros.</p>
 
